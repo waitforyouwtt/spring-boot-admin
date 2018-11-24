@@ -1,0 +1,25 @@
+eureka:
+  instance:
+    appname: service-turbine
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  security:
+    enabled: false
+server:
+  port: 8769
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: eureka-client-one,eureka-client-two
+  clusterNameExpression: new String("default")
+logging:
+  file: "logs/service-turbine.log"
+spring:
+  application:
+    name: service-turbine
+  boot:
+    admin:
+      routes:
+        endpoints: env,metrics,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream

@@ -1,0 +1,1129 @@
+2018-11-24 11:34:42.748  INFO 12108 --- [main] com.book.TurbineServiceApplication       : No active profile set, falling back to default profiles: default
+2018-11-24 11:34:42.757  INFO 12108 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2da59753: startup date [Sat Nov 24 11:34:42 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3aefe5e5
+2018-11-24 11:34:43.355  INFO 12108 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=94e74abe-3c6c-3a4d-bbc5-685a0f8cc52b
+2018-11-24 11:34:43.376  INFO 12108 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-11-24 11:34:43.421  INFO 12108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$9fadddf3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:34:43.428  INFO 12108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$899b3aaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:34:43.616  INFO 12108 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8769 (http)
+2018-11-24 11:34:43.626  INFO 12108 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-11-24 11:34:43.627  INFO 12108 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-24 11:34:43.794  INFO 12108 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-24 11:34:43.794  INFO 12108 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1037 ms
+2018-11-24 11:34:44.034  INFO 12108 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'turbineStreamServlet' to [/turbine.stream]
+2018-11-24 11:34:44.035  INFO 12108 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-24 11:34:44.037  INFO 12108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2018-11-24 11:34:44.038  INFO 12108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-24 11:34:44.038  INFO 12108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-24 11:34:44.038  INFO 12108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-24 11:34:44.038  INFO 12108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-24 11:34:44.038  INFO 12108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-11-24 11:34:44.038  INFO 12108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-11-24 11:34:44.096  WARN 12108 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'instanceDiscovery' defined in org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.turbine.discovery.InstanceDiscovery]: Factory method 'instanceDiscovery' threw exception; nested exception is org.springframework.expression.spel.SpelParseException: Expression [new String("default)] @11: EL1045E: Cannot find terminating " for string
+2018-11-24 11:34:44.097  INFO 12108 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2018-11-24 11:34:44.116  INFO 12108 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-11-24 11:34:44.123 ERROR 12108 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'instanceDiscovery' defined in org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.turbine.discovery.InstanceDiscovery]: Factory method 'instanceDiscovery' threw exception; nested exception is org.springframework.expression.spel.SpelParseException: Expression [new String("default)] @11: EL1045E: Cannot find terminating " for string
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at com.book.TurbineServiceApplication.main(TurbineServiceApplication.java:12) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.turbine.discovery.InstanceDiscovery]: Factory method 'instanceDiscovery' threw exception; nested exception is org.springframework.expression.spel.SpelParseException: Expression [new String("default)] @11: EL1045E: Cannot find terminating " for string
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 18 common frames omitted
+Caused by: org.springframework.expression.spel.SpelParseException: Expression [new String("default)] @11: EL1045E: Cannot find terminating " for string
+	at org.springframework.expression.spel.standard.Tokenizer.lexDoubleQuotedStringLiteral(Tokenizer.java:322) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.Tokenizer.process(Tokenizer.java:260) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.Tokenizer.<init>(Tokenizer.java:83) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:122) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:60) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:32) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:73) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:60) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.cloud.netflix.turbine.CommonsInstanceDiscovery.<init>(CommonsInstanceDiscovery.java:74) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cloud.netflix.turbine.EurekaInstanceDiscovery.<init>(EurekaInstanceDiscovery.java:56) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration.instanceDiscovery(TurbineHttpConfiguration.java:69) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration$$EnhancerBySpringCGLIB$$b5b01381.CGLIB$instanceDiscovery$0(<generated>) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration$$EnhancerBySpringCGLIB$$b5b01381$$FastClassBySpringCGLIB$$894fc7cb.invoke(<generated>) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration$$EnhancerBySpringCGLIB$$b5b01381.instanceDiscovery(<generated>) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_73]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_73]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_73]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_73]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 19 common frames omitted
+
+2018-11-24 11:35:50.420  INFO 8932 --- [main] com.book.TurbineServiceApplication       : No active profile set, falling back to default profiles: default
+2018-11-24 11:35:50.433  INFO 8932 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5629510: startup date [Sat Nov 24 11:35:50 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@149e0f5d
+2018-11-24 11:35:51.067  INFO 8932 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=94e74abe-3c6c-3a4d-bbc5-685a0f8cc52b
+2018-11-24 11:35:51.080  INFO 8932 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-11-24 11:35:51.121  INFO 8932 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$e6c81f02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:35:51.128  INFO 8932 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d0b57bbe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:35:51.337  INFO 8932 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8769 (http)
+2018-11-24 11:35:51.344  INFO 8932 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-11-24 11:35:51.345  INFO 8932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-24 11:35:51.514  INFO 8932 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-24 11:35:51.514  INFO 8932 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1081 ms
+2018-11-24 11:35:51.757  INFO 8932 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'turbineStreamServlet' to [/turbine.stream]
+2018-11-24 11:35:51.758  INFO 8932 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-24 11:35:51.761  INFO 8932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2018-11-24 11:35:51.761  INFO 8932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-24 11:35:51.761  INFO 8932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-24 11:35:51.761  INFO 8932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-24 11:35:51.761  INFO 8932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-24 11:35:51.762  INFO 8932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-11-24 11:35:51.762  INFO 8932 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-11-24 11:35:51.819  WARN 8932 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'instanceDiscovery' defined in org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.turbine.discovery.InstanceDiscovery]: Factory method 'instanceDiscovery' threw exception; nested exception is org.springframework.expression.spel.SpelParseException: Expression [new String("default)] @11: EL1045E: Cannot find terminating " for string
+2018-11-24 11:35:51.820  INFO 8932 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2018-11-24 11:35:51.834  INFO 8932 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-11-24 11:35:51.841 ERROR 8932 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'instanceDiscovery' defined in org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.turbine.discovery.InstanceDiscovery]: Factory method 'instanceDiscovery' threw exception; nested exception is org.springframework.expression.spel.SpelParseException: Expression [new String("default)] @11: EL1045E: Cannot find terminating " for string
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at com.book.TurbineServiceApplication.main(TurbineServiceApplication.java:13) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.turbine.discovery.InstanceDiscovery]: Factory method 'instanceDiscovery' threw exception; nested exception is org.springframework.expression.spel.SpelParseException: Expression [new String("default)] @11: EL1045E: Cannot find terminating " for string
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 18 common frames omitted
+Caused by: org.springframework.expression.spel.SpelParseException: Expression [new String("default)] @11: EL1045E: Cannot find terminating " for string
+	at org.springframework.expression.spel.standard.Tokenizer.lexDoubleQuotedStringLiteral(Tokenizer.java:322) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.Tokenizer.process(Tokenizer.java:260) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.Tokenizer.<init>(Tokenizer.java:83) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:122) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:60) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:32) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:73) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:60) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.cloud.netflix.turbine.CommonsInstanceDiscovery.<init>(CommonsInstanceDiscovery.java:74) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cloud.netflix.turbine.EurekaInstanceDiscovery.<init>(EurekaInstanceDiscovery.java:56) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration.instanceDiscovery(TurbineHttpConfiguration.java:69) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration$$EnhancerBySpringCGLIB$$fcca5490.CGLIB$instanceDiscovery$0(<generated>) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration$$EnhancerBySpringCGLIB$$fcca5490$$FastClassBySpringCGLIB$$ae9c4ea0.invoke(<generated>) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration$$EnhancerBySpringCGLIB$$fcca5490.instanceDiscovery(<generated>) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_73]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_73]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_73]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_73]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 19 common frames omitted
+
+2018-11-24 11:36:46.724  INFO 13836 --- [main] com.book.TurbineServiceApplication       : No active profile set, falling back to default profiles: default
+2018-11-24 11:36:46.735  INFO 13836 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28ec166e: startup date [Sat Nov 24 11:36:46 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3aefe5e5
+2018-11-24 11:36:47.370  INFO 13836 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=94e74abe-3c6c-3a4d-bbc5-685a0f8cc52b
+2018-11-24 11:36:47.382  INFO 13836 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-11-24 11:36:47.422  INFO 13836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$9fadddf3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:36:47.429  INFO 13836 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$899b3aaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:36:47.598  INFO 13836 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8769 (http)
+2018-11-24 11:36:47.607  INFO 13836 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-11-24 11:36:47.608  INFO 13836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-24 11:36:47.769  INFO 13836 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-24 11:36:47.769  INFO 13836 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1034 ms
+2018-11-24 11:36:48.001  INFO 13836 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'turbineStreamServlet' to [/turbine.stream]
+2018-11-24 11:36:48.002  INFO 13836 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-24 11:36:48.005  INFO 13836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2018-11-24 11:36:48.006  INFO 13836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-24 11:36:48.006  INFO 13836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-24 11:36:48.006  INFO 13836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-24 11:36:48.006  INFO 13836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-24 11:36:48.006  INFO 13836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-11-24 11:36:48.006  INFO 13836 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-11-24 11:36:48.063  WARN 13836 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'instanceDiscovery' defined in org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.turbine.discovery.InstanceDiscovery]: Factory method 'instanceDiscovery' threw exception; nested exception is org.springframework.expression.spel.SpelParseException: Expression [new String ("default)] @12: EL1045E: Cannot find terminating " for string
+2018-11-24 11:36:48.063  INFO 13836 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2018-11-24 11:36:48.077  INFO 13836 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-11-24 11:36:48.085 ERROR 13836 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'instanceDiscovery' defined in org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.turbine.discovery.InstanceDiscovery]: Factory method 'instanceDiscovery' threw exception; nested exception is org.springframework.expression.spel.SpelParseException: Expression [new String ("default)] @12: EL1045E: Cannot find terminating " for string
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at com.book.TurbineServiceApplication.main(TurbineServiceApplication.java:13) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.turbine.discovery.InstanceDiscovery]: Factory method 'instanceDiscovery' threw exception; nested exception is org.springframework.expression.spel.SpelParseException: Expression [new String ("default)] @12: EL1045E: Cannot find terminating " for string
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 18 common frames omitted
+Caused by: org.springframework.expression.spel.SpelParseException: Expression [new String ("default)] @12: EL1045E: Cannot find terminating " for string
+	at org.springframework.expression.spel.standard.Tokenizer.lexDoubleQuotedStringLiteral(Tokenizer.java:322) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.Tokenizer.process(Tokenizer.java:260) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.Tokenizer.<init>(Tokenizer.java:83) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:122) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:60) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:32) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:73) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:60) ~[spring-expression-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.cloud.netflix.turbine.CommonsInstanceDiscovery.<init>(CommonsInstanceDiscovery.java:74) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cloud.netflix.turbine.EurekaInstanceDiscovery.<init>(EurekaInstanceDiscovery.java:56) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration.instanceDiscovery(TurbineHttpConfiguration.java:69) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration$$EnhancerBySpringCGLIB$$b5b01381.CGLIB$instanceDiscovery$0(<generated>) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration$$EnhancerBySpringCGLIB$$b5b01381$$FastClassBySpringCGLIB$$894fc7cb.invoke(<generated>) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.cloud.netflix.turbine.TurbineHttpConfiguration$EurekaTurbineConfiguration$$EnhancerBySpringCGLIB$$b5b01381.instanceDiscovery(<generated>) ~[spring-cloud-netflix-turbine-1.3.1.RELEASE.jar:1.3.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_73]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_73]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_73]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_73]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 19 common frames omitted
+
+2018-11-24 11:38:08.199  INFO 7764 --- [main] com.book.TurbineServiceApplication       : No active profile set, falling back to default profiles: default
+2018-11-24 11:38:08.212  INFO 7764 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2da59753: startup date [Sat Nov 24 11:38:08 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3aefe5e5
+2018-11-24 11:38:08.983  INFO 7764 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=94e74abe-3c6c-3a4d-bbc5-685a0f8cc52b
+2018-11-24 11:38:09.001  INFO 7764 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-11-24 11:38:09.058  INFO 7764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$9fadddf3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:38:09.068  INFO 7764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$899b3aaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:38:09.296  INFO 7764 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8769 (http)
+2018-11-24 11:38:09.305  INFO 7764 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-11-24 11:38:09.306  INFO 7764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-24 11:38:09.466  INFO 7764 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-24 11:38:09.466  INFO 7764 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1254 ms
+2018-11-24 11:38:09.705  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'turbineStreamServlet' to [/turbine.stream]
+2018-11-24 11:38:09.706  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-24 11:38:09.709  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2018-11-24 11:38:09.709  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-24 11:38:09.709  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-24 11:38:09.710  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-24 11:38:09.710  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-24 11:38:09.710  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-11-24 11:38:09.711  INFO 7764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-11-24 11:38:10.443  INFO 7764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2018-11-24 11:38:10.562  INFO 7764 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2da59753: startup date [Sat Nov 24 11:38:08 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3aefe5e5
+2018-11-24 11:38:10.626  INFO 7764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-24 11:38:10.627  INFO 7764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-24 11:38:10.661  INFO 7764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 11:38:10.661  INFO 7764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 11:38:10.697  INFO 7764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 11:38:11.130  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-11-24 11:38:11.131  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:38:11.132  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-11-24 11:38:11.132  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:38:11.133  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-11-24 11:38:11.134  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-11-24 11:38:11.134  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:38:11.134  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:38:11.135  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-11-24 11:38:11.135  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-11-24 11:38:11.135  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:38:11.137  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:38:11.137  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-11-24 11:38:11.137  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:38:11.138  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:38:11.138  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-11-24 11:38:11.139  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-11-24 11:38:11.139  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:38:11.141  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-11-24 11:38:11.141  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-11-24 11:38:11.141  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-11-24 11:38:11.142  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-11-24 11:38:11.142  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-11-24 11:38:11.143  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-11-24 11:38:11.143  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-11-24 11:38:11.143  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:38:11.144  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-11-24 11:38:11.144  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:38:11.145  INFO 7764 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:38:11.232  WARN 7764 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-24 11:38:11.232  INFO 7764 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-24 11:38:11.235  WARN 7764 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-24 11:38:11.236  INFO 7764 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-24 11:38:11.283  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-24 11:38:11.288  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-11-24 11:38:11.290  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-11-24 11:38:11.291  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-11-24 11:38:11.291  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-11-24 11:38:11.292  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-11-24 11:38:11.292  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-11-24 11:38:11.294  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-11-24 11:38:11.303  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-11-24 11:38:11.310  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-11-24 11:38:11.316  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-11-24 11:38:11.322  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=2da59753,type=ConfigurationPropertiesRebinder]
+2018-11-24 11:38:11.325  INFO 7764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-11-24 11:38:11.614  INFO 7764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2018-11-24 11:38:11.616  INFO 7764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: jolokia:type=Config is already registered. Adding it with jolokia:type=Config,uuid=b6d85485-e5a4-48dc-936d-c982a37657cd, but you should revise your setup in order to either use a qualifier or ensure, that only a single agent gets registered (otherwise history functionality might not work)
+2018-11-24 11:38:11.617  INFO 7764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Cannot register (legacy) MBean handler for config store with name jmx4perl:type=Config since it already exists. This is the case if another agent has been already started within the same JVM. The registration is skipped.
+2018-11-24 11:38:11.617  INFO 7764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Jolokia Discovery MBean registration is skipped because there is already one registered.
+2018-11-24 11:38:11.655  INFO 7764 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-11-24 11:38:11.677  INFO 7764 --- [main] o.s.c.n.turbine.SpringAggregatorFactory  : Could not find monitors: []
+2018-11-24 11:38:11.740  INFO 7764 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StaticListener_For_Aggregator
+2018-11-24 11:38:11.741  INFO 7764 --- [main] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StaticListener_For_Aggregator
+2018-11-24 11:38:11.741  INFO 7764 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StaticListener_For_Aggregator]
+2018-11-24 11:38:11.741  INFO 7764 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2018-11-24 11:38:11.743  INFO 7764 --- [main] c.n.t.discovery.InstanceObservable       : Starting InstanceObservable at frequency: 60000 millis
+2018-11-24 11:38:11.744  INFO 7764 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:38:11.744  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:38:11.750  INFO 7764 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-11-24 11:38:11.776  INFO 7764 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-11-24 11:38:12.019  INFO 7764 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-11-24 11:38:12.020  INFO 7764 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-11-24 11:38:12.086  INFO 7764 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-11-24 11:38:12.087  INFO 7764 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-11-24 11:38:12.203  INFO 7764 --- [Timer-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-24 11:38:12.391  INFO 7764 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-11-24 11:38:12.391  INFO 7764 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-11-24 11:38:12.391  INFO 7764 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-11-24 11:38:12.391  INFO 7764 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-11-24 11:38:12.391  INFO 7764 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-11-24 11:38:12.391  INFO 7764 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-11-24 11:38:12.392  INFO 7764 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-11-24 11:38:12.513  INFO 7764 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-11-24 11:38:12.514  INFO 7764 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-11-24 11:38:12.515  INFO 7764 --- [Timer-0] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-11-24 11:38:12.517  INFO 7764 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1543030692516 with initial instances count: 3
+2018-11-24 11:38:12.530  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:38:12.530  INFO 7764 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application service-turbine with eureka with status UP
+2018-11-24 11:38:12.531  INFO 7764 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1543030692531, current=UP, previous=STARTING]
+2018-11-24 11:38:12.532  INFO 7764 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-TURBINE/DESKTOP-T4PO715:service-turbine:8769: registering service...
+2018-11-24 11:38:12.539  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:38:12.540  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:38:12.540  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:38:12.540  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:38:12.541  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:38:12.544  INFO 7764 --- [Timer-0] c.n.t.monitor.instance.InstanceMonitor   : Url for host: http://DESKTOP-T4PO715:8762/hystrix.stream default
+2018-11-24 11:38:12.544  INFO 7764 --- [Timer-0] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: default_agg_aggClusterEventHandler
+2018-11-24 11:38:12.546  INFO 7764 --- [Timer-0] c.n.turbine.data.AggDataFromCluster      : Per handler dispacher started for: default_agg_aggClusterEventHandler
+2018-11-24 11:38:12.548  INFO 7764 --- [Timer-0] c.n.t.monitor.instance.InstanceMonitor   : Url for host: http://DESKTOP-T4PO715:8763/hystrix.stream default
+2018-11-24 11:38:12.580  INFO 7764 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-TURBINE/DESKTOP-T4PO715:service-turbine:8769 - registration status: 204
+2018-11-24 11:38:12.662  INFO 7764 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8769 (http)
+2018-11-24 11:38:12.663  INFO 7764 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8769
+2018-11-24 11:38:12.669  INFO 7764 --- [main] com.book.TurbineServiceApplication       : Started TurbineServiceApplication in 5.763 seconds (JVM running for 6.851)
+2018-11-24 11:38:35.046  INFO 7764 --- [http-nio-8769-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-24 11:38:35.047  INFO 7764 --- [http-nio-8769-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-24 11:38:35.081  INFO 7764 --- [http-nio-8769-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2018-11-24 11:39:11.744  INFO 7764 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:39:11.744  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:39:11.745  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:39:11.745  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:39:11.745  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:39:11.745  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:39:11.746  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:39:11.746  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:40:11.744  INFO 7764 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:40:11.744  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:40:11.744  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:40:11.745  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:40:11.745  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:40:11.745  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:40:11.745  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:40:11.745  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:41:11.744  INFO 7764 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:41:11.744  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:41:11.745  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:41:11.745  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:41:11.746  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:41:11.746  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:41:11.746  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:41:11.747  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:42:11.745  INFO 7764 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:42:11.745  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:42:11.745  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:42:11.746  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:42:11.746  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:42:11.746  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:42:11.746  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:42:11.746  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:43:11.746  INFO 7764 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:43:11.746  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:43:11.747  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:43:11.747  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:43:11.748  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:43:11.748  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:43:11.748  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:43:11.748  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:43:12.394  INFO 7764 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-24 11:44:11.747  INFO 7764 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:44:11.747  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:44:11.748  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:44:11.748  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:44:11.748  INFO 7764 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:44:11.749  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:44:11.749  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:44:11.750  INFO 7764 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:44:32.478  INFO 13092 --- [main] com.book.TurbineServiceApplication       : No active profile set, falling back to default profiles: default
+2018-11-24 11:44:32.493  INFO 13092 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28ec166e: startup date [Sat Nov 24 11:44:32 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3aefe5e5
+2018-11-24 11:44:33.231  INFO 13092 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=94e74abe-3c6c-3a4d-bbc5-685a0f8cc52b
+2018-11-24 11:44:33.244  INFO 13092 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-11-24 11:44:33.303  INFO 13092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$9fadddf3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:44:33.312  INFO 13092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$899b3aaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:44:33.547  INFO 13092 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8769 (http)
+2018-11-24 11:44:33.559  INFO 13092 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-11-24 11:44:33.561  INFO 13092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-24 11:44:33.751  INFO 13092 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-24 11:44:33.752  INFO 13092 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1259 ms
+2018-11-24 11:44:34.011  INFO 13092 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'turbineStreamServlet' to [/turbine.stream]
+2018-11-24 11:44:34.012  INFO 13092 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-24 11:44:34.015  INFO 13092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2018-11-24 11:44:34.015  INFO 13092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-24 11:44:34.015  INFO 13092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-24 11:44:34.016  INFO 13092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-24 11:44:34.016  INFO 13092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-24 11:44:34.016  INFO 13092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-11-24 11:44:34.016  INFO 13092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-11-24 11:44:34.781  INFO 13092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2018-11-24 11:44:34.902  INFO 13092 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28ec166e: startup date [Sat Nov 24 11:44:32 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3aefe5e5
+2018-11-24 11:44:34.962  INFO 13092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-24 11:44:34.963  INFO 13092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-24 11:44:34.992  INFO 13092 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 11:44:34.992  INFO 13092 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 11:44:35.028  INFO 13092 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 11:44:35.450  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-11-24 11:44:35.450  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-11-24 11:44:35.451  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-11-24 11:44:35.451  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:44:35.452  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:44:35.453  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-11-24 11:44:35.454  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:44:35.454  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:44:35.454  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-11-24 11:44:35.455  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:44:35.455  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-11-24 11:44:35.457  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-11-24 11:44:35.458  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:44:35.458  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-11-24 11:44:35.459  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:44:35.459  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-11-24 11:44:35.460  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:44:35.460  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-11-24 11:44:35.461  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-11-24 11:44:35.462  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:44:35.463  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-11-24 11:44:35.463  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-11-24 11:44:35.463  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:44:35.464  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-11-24 11:44:35.464  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-11-24 11:44:35.464  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-11-24 11:44:35.465  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:44:35.465  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-11-24 11:44:35.465  INFO 13092 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:44:35.565  WARN 13092 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-24 11:44:35.566  INFO 13092 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-24 11:44:35.569  WARN 13092 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-24 11:44:35.569  INFO 13092 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-24 11:44:35.628  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-24 11:44:35.636  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-11-24 11:44:35.637  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-11-24 11:44:35.638  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-11-24 11:44:35.638  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-11-24 11:44:35.639  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-11-24 11:44:35.639  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-11-24 11:44:35.640  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-11-24 11:44:35.649  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-11-24 11:44:35.656  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-11-24 11:44:35.662  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-11-24 11:44:35.670  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=28ec166e,type=ConfigurationPropertiesRebinder]
+2018-11-24 11:44:35.674  INFO 13092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-11-24 11:44:36.002  INFO 13092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2018-11-24 11:44:36.005  INFO 13092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: jolokia:type=Config is already registered. Adding it with jolokia:type=Config,uuid=ac33d91f-51db-4daa-9e95-b58ddd3cef55, but you should revise your setup in order to either use a qualifier or ensure, that only a single agent gets registered (otherwise history functionality might not work)
+2018-11-24 11:44:36.005  INFO 13092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Cannot register (legacy) MBean handler for config store with name jmx4perl:type=Config since it already exists. This is the case if another agent has been already started within the same JVM. The registration is skipped.
+2018-11-24 11:44:36.006  INFO 13092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Jolokia Discovery MBean registration is skipped because there is already one registered.
+2018-11-24 11:44:36.045  INFO 13092 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-11-24 11:44:36.056  INFO 13092 --- [main] o.s.c.n.turbine.SpringAggregatorFactory  : Could not find monitors: []
+2018-11-24 11:44:36.118  INFO 13092 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StaticListener_For_Aggregator
+2018-11-24 11:44:36.119  INFO 13092 --- [main] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StaticListener_For_Aggregator
+2018-11-24 11:44:36.119  INFO 13092 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StaticListener_For_Aggregator]
+2018-11-24 11:44:36.119  INFO 13092 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2018-11-24 11:44:36.121  INFO 13092 --- [main] c.n.t.discovery.InstanceObservable       : Starting InstanceObservable at frequency: 60000 millis
+2018-11-24 11:44:36.122  INFO 13092 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:44:36.122  INFO 13092 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:44:36.128  INFO 13092 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-11-24 11:44:36.154  INFO 13092 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-11-24 11:44:36.391  INFO 13092 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-11-24 11:44:36.391  INFO 13092 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-11-24 11:44:36.456  INFO 13092 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-11-24 11:44:36.456  INFO 13092 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-11-24 11:44:36.575  INFO 13092 --- [Timer-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-24 11:44:36.780  INFO 13092 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-11-24 11:44:36.780  INFO 13092 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-11-24 11:44:36.780  INFO 13092 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-11-24 11:44:36.780  INFO 13092 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-11-24 11:44:36.781  INFO 13092 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-11-24 11:44:36.781  INFO 13092 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-11-24 11:44:36.781  INFO 13092 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-11-24 11:44:36.899  INFO 13092 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-11-24 11:44:36.901  INFO 13092 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-11-24 11:44:36.903  INFO 13092 --- [Timer-0] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-11-24 11:44:36.904  INFO 13092 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1543031076904 with initial instances count: 4
+2018-11-24 11:44:36.918  INFO 13092 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:44:36.918  INFO 13092 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application service-turbine with eureka with status UP
+2018-11-24 11:44:36.918  INFO 13092 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1543031076918, current=UP, previous=STARTING]
+2018-11-24 11:44:36.919  INFO 13092 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-TURBINE/DESKTOP-T4PO715:service-turbine:8769: registering service...
+2018-11-24 11:44:36.929  INFO 13092 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:44:36.930  INFO 13092 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:44:36.930  INFO 13092 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:44:36.930  INFO 13092 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:44:36.931  INFO 13092 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:44:36.934  INFO 13092 --- [Timer-0] c.n.t.monitor.instance.InstanceMonitor   : Url for host: http://DESKTOP-T4PO715:8762/hystrix.stream default
+2018-11-24 11:44:36.935  INFO 13092 --- [Timer-0] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: default_agg_aggClusterEventHandler
+2018-11-24 11:44:36.936  INFO 13092 --- [Timer-0] c.n.turbine.data.AggDataFromCluster      : Per handler dispacher started for: default_agg_aggClusterEventHandler
+2018-11-24 11:44:36.937  INFO 13092 --- [Timer-0] c.n.t.monitor.instance.InstanceMonitor   : Url for host: http://DESKTOP-T4PO715:8763/hystrix.stream default
+2018-11-24 11:44:36.966  INFO 13092 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-TURBINE/DESKTOP-T4PO715:service-turbine:8769 - registration status: 204
+2018-11-24 11:44:37.019  INFO 13092 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8769 (http)
+2018-11-24 11:44:37.020  INFO 13092 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8769
+2018-11-24 11:44:37.022  INFO 13092 --- [main] com.book.TurbineServiceApplication       : Started TurbineServiceApplication in 6.211 seconds (JVM running for 7.204)
+2018-11-24 11:44:37.146  INFO 13092 --- [http-nio-8769-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-24 11:44:37.146  INFO 13092 --- [http-nio-8769-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-24 11:44:37.167  INFO 13092 --- [http-nio-8769-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-11-24 11:44:38.460  INFO 13092 --- [InstanceMonitor] c.n.t.monitor.instance.InstanceMonitor   : no more data from connection to DESKTOP-T4PO715:8762
+2018-11-24 11:44:38.462  INFO 13092 --- [InstanceMonitor] c.n.t.monitor.instance.InstanceMonitor   : Re-initing host connection: DESKTOP-T4PO715:8762 default
+2018-11-24 11:44:39.980  INFO 13092 --- [InstanceMonitor] c.n.t.monitor.instance.InstanceMonitor   : Got ioe for host: DESKTOP-T4PO715:8762
+2018-11-24 11:44:39.981  INFO 13092 --- [InstanceMonitor] c.n.t.monitor.instance.InstanceMonitor   : Re-initing host connection: DESKTOP-T4PO715:8762 default
+2018-11-24 11:45:20.043  INFO 13092 --- [InstanceMonitor] c.n.t.monitor.instance.InstanceMonitor   : Got ioe for host: DESKTOP-T4PO715:8763
+2018-11-24 11:45:20.044  INFO 13092 --- [InstanceMonitor] c.n.t.monitor.instance.InstanceMonitor   : Re-initing host connection: DESKTOP-T4PO715:8763 default
+2018-11-24 11:46:32.676  INFO 3500 --- [main] com.book.TurbineServiceApplication       : No active profile set, falling back to default profiles: default
+2018-11-24 11:46:32.687  INFO 3500 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28ec166e: startup date [Sat Nov 24 11:46:32 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3aefe5e5
+2018-11-24 11:46:33.369  INFO 3500 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=94e74abe-3c6c-3a4d-bbc5-685a0f8cc52b
+2018-11-24 11:46:33.390  INFO 3500 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-11-24 11:46:33.444  INFO 3500 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$9fadddf3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:46:33.455  INFO 3500 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$899b3aaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:46:33.681  INFO 3500 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8769 (http)
+2018-11-24 11:46:33.689  INFO 3500 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-11-24 11:46:33.691  INFO 3500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-24 11:46:33.890  INFO 3500 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-24 11:46:33.891  INFO 3500 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1203 ms
+2018-11-24 11:46:34.157  INFO 3500 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'turbineStreamServlet' to [/turbine.stream]
+2018-11-24 11:46:34.158  INFO 3500 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-24 11:46:34.160  INFO 3500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2018-11-24 11:46:34.161  INFO 3500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-24 11:46:34.161  INFO 3500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-24 11:46:34.161  INFO 3500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-24 11:46:34.161  INFO 3500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-24 11:46:34.161  INFO 3500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-11-24 11:46:34.161  INFO 3500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-11-24 11:46:34.892  INFO 3500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2018-11-24 11:46:35.011  INFO 3500 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28ec166e: startup date [Sat Nov 24 11:46:32 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3aefe5e5
+2018-11-24 11:46:35.071  INFO 3500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-24 11:46:35.071  INFO 3500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-24 11:46:35.098  INFO 3500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 11:46:35.098  INFO 3500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 11:46:35.134  INFO 3500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 11:46:35.522  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-11-24 11:46:35.523  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:46:35.523  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:46:35.524  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:46:35.524  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-11-24 11:46:35.525  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:46:35.525  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-11-24 11:46:35.526  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-11-24 11:46:35.526  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:46:35.526  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-11-24 11:46:35.527  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:46:35.528  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:46:35.529  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-11-24 11:46:35.529  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-11-24 11:46:35.530  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:46:35.530  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-11-24 11:46:35.530  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-11-24 11:46:35.532  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-11-24 11:46:35.533  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-11-24 11:46:35.534  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-11-24 11:46:35.534  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:46:35.535  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-11-24 11:46:35.535  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:46:35.536  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-11-24 11:46:35.536  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-11-24 11:46:35.537  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-11-24 11:46:35.538  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:46:35.539  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-11-24 11:46:35.539  INFO 3500 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:46:35.636  WARN 3500 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-24 11:46:35.637  INFO 3500 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-24 11:46:35.640  WARN 3500 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-24 11:46:35.640  INFO 3500 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-24 11:46:35.687  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-24 11:46:35.693  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-11-24 11:46:35.695  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-11-24 11:46:35.695  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-11-24 11:46:35.696  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-11-24 11:46:35.697  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-11-24 11:46:35.697  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-11-24 11:46:35.699  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-11-24 11:46:35.707  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-11-24 11:46:35.714  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-11-24 11:46:35.719  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-11-24 11:46:35.726  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=28ec166e,type=ConfigurationPropertiesRebinder]
+2018-11-24 11:46:35.730  INFO 3500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-11-24 11:46:36.026  INFO 3500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2018-11-24 11:46:36.028  INFO 3500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: jolokia:type=Config is already registered. Adding it with jolokia:type=Config,uuid=2df4b94d-45fa-4575-98d2-760145d9059b, but you should revise your setup in order to either use a qualifier or ensure, that only a single agent gets registered (otherwise history functionality might not work)
+2018-11-24 11:46:36.029  INFO 3500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Cannot register (legacy) MBean handler for config store with name jmx4perl:type=Config since it already exists. This is the case if another agent has been already started within the same JVM. The registration is skipped.
+2018-11-24 11:46:36.029  INFO 3500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Jolokia Discovery MBean registration is skipped because there is already one registered.
+2018-11-24 11:46:36.077  INFO 3500 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-11-24 11:46:36.087  INFO 3500 --- [main] o.s.c.n.turbine.SpringAggregatorFactory  : Could not find monitors: []
+2018-11-24 11:46:36.147  INFO 3500 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StaticListener_For_Aggregator
+2018-11-24 11:46:36.148  INFO 3500 --- [main] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StaticListener_For_Aggregator
+2018-11-24 11:46:36.148  INFO 3500 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StaticListener_For_Aggregator]
+2018-11-24 11:46:36.148  INFO 3500 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2018-11-24 11:46:36.150  INFO 3500 --- [main] c.n.t.discovery.InstanceObservable       : Starting InstanceObservable at frequency: 60000 millis
+2018-11-24 11:46:36.152  INFO 3500 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:46:36.152  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:46:36.157  INFO 3500 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-11-24 11:46:36.181  INFO 3500 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-11-24 11:46:36.413  INFO 3500 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-11-24 11:46:36.413  INFO 3500 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-11-24 11:46:36.475  INFO 3500 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-11-24 11:46:36.476  INFO 3500 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-11-24 11:46:36.594  INFO 3500 --- [Timer-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-24 11:46:36.781  INFO 3500 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-11-24 11:46:36.781  INFO 3500 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-11-24 11:46:36.782  INFO 3500 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-11-24 11:46:36.782  INFO 3500 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-11-24 11:46:36.782  INFO 3500 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-11-24 11:46:36.782  INFO 3500 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-11-24 11:46:36.782  INFO 3500 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-11-24 11:46:36.898  INFO 3500 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-11-24 11:46:36.900  INFO 3500 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-11-24 11:46:36.901  INFO 3500 --- [Timer-0] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-11-24 11:46:36.903  INFO 3500 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1543031196903 with initial instances count: 4
+2018-11-24 11:46:36.916  INFO 3500 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application service-turbine with eureka with status UP
+2018-11-24 11:46:36.916  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:46:36.917  INFO 3500 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1543031196917, current=UP, previous=STARTING]
+2018-11-24 11:46:36.918  INFO 3500 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-TURBINE/DESKTOP-T4PO715:service-turbine:8769: registering service...
+2018-11-24 11:46:36.926  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:46:36.927  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:46:36.927  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:46:36.927  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:46:36.927  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:46:36.931  INFO 3500 --- [Timer-0] c.n.t.monitor.instance.InstanceMonitor   : Url for host: http://DESKTOP-T4PO715:8762/hystrix.stream default
+2018-11-24 11:46:36.933  INFO 3500 --- [Timer-0] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: default_agg_aggClusterEventHandler
+2018-11-24 11:46:36.935  INFO 3500 --- [Timer-0] c.n.turbine.data.AggDataFromCluster      : Per handler dispacher started for: default_agg_aggClusterEventHandler
+2018-11-24 11:46:36.936  INFO 3500 --- [Timer-0] c.n.t.monitor.instance.InstanceMonitor   : Url for host: http://DESKTOP-T4PO715:8763/hystrix.stream default
+2018-11-24 11:46:36.962  INFO 3500 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-TURBINE/DESKTOP-T4PO715:service-turbine:8769 - registration status: 204
+2018-11-24 11:46:37.046  INFO 3500 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8769 (http)
+2018-11-24 11:46:37.047  INFO 3500 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8769
+2018-11-24 11:46:37.051  INFO 3500 --- [main] com.book.TurbineServiceApplication       : Started TurbineServiceApplication in 5.674 seconds (JVM running for 6.723)
+2018-11-24 11:46:59.454  INFO 3500 --- [http-nio-8769-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-24 11:46:59.455  INFO 3500 --- [http-nio-8769-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-24 11:46:59.487  INFO 3500 --- [http-nio-8769-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-11-24 11:47:36.152  INFO 3500 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:47:36.153  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:47:36.153  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:47:36.154  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:47:36.154  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:47:36.155  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:47:36.155  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:47:36.155  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:48:36.153  INFO 3500 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:48:36.153  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:48:36.153  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:48:36.153  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:48:36.153  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:48:36.153  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:48:36.154  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:48:36.154  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:49:36.154  INFO 3500 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:49:36.154  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:49:36.154  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:49:36.155  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:49:36.155  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:49:36.155  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:49:36.155  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:49:36.155  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:50:36.154  INFO 3500 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:50:36.154  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:50:36.154  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:50:36.155  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:50:36.155  INFO 3500 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:50:36.155  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:50:36.155  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:50:36.156  INFO 3500 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:53:30.048  INFO 18400 --- [main] com.book.TurbineServiceApplication       : No active profile set, falling back to default profiles: default
+2018-11-24 11:53:30.059  INFO 18400 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5629510: startup date [Sat Nov 24 11:53:30 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@149e0f5d
+2018-11-24 11:53:30.664  INFO 18400 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=94e74abe-3c6c-3a4d-bbc5-685a0f8cc52b
+2018-11-24 11:53:30.677  INFO 18400 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-11-24 11:53:30.719  INFO 18400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$e6c81f02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:53:30.725  INFO 18400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d0b57bbe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-24 11:53:30.892  INFO 18400 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8769 (http)
+2018-11-24 11:53:30.899  INFO 18400 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-11-24 11:53:30.900  INFO 18400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-24 11:53:31.059  INFO 18400 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-24 11:53:31.059  INFO 18400 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1000 ms
+2018-11-24 11:53:31.294  INFO 18400 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'turbineStreamServlet' to [/turbine.stream]
+2018-11-24 11:53:31.295  INFO 18400 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-24 11:53:31.298  INFO 18400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2018-11-24 11:53:31.298  INFO 18400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-24 11:53:31.299  INFO 18400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-24 11:53:31.299  INFO 18400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-24 11:53:31.299  INFO 18400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-24 11:53:31.299  INFO 18400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-11-24 11:53:31.299  INFO 18400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-11-24 11:53:32.017  INFO 18400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2018-11-24 11:53:32.133  INFO 18400 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5629510: startup date [Sat Nov 24 11:53:30 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@149e0f5d
+2018-11-24 11:53:32.194  INFO 18400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-24 11:53:32.195  INFO 18400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-24 11:53:32.221  INFO 18400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 11:53:32.221  INFO 18400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 11:53:32.257  INFO 18400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-24 11:53:32.634  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:53:32.634  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:53:32.635  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-11-24 11:53:32.635  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-11-24 11:53:32.636  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-11-24 11:53:32.636  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-11-24 11:53:32.637  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-11-24 11:53:32.637  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:53:32.639  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-11-24 11:53:32.639  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-11-24 11:53:32.639  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:53:32.640  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:53:32.641  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:53:32.641  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:53:32.642  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-11-24 11:53:32.642  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-11-24 11:53:32.642  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-11-24 11:53:32.643  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:53:32.643  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-11-24 11:53:32.644  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-11-24 11:53:32.645  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-11-24 11:53:32.645  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-11-24 11:53:32.646  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-11-24 11:53:32.646  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:53:32.646  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-11-24 11:53:32.647  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:53:32.647  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-11-24 11:53:32.647  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:53:32.647  INFO 18400 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-11-24 11:53:32.735  WARN 18400 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-24 11:53:32.736  INFO 18400 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-24 11:53:32.739  WARN 18400 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-24 11:53:32.739  INFO 18400 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-24 11:53:32.787  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-24 11:53:32.792  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-11-24 11:53:32.793  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-11-24 11:53:32.794  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-11-24 11:53:32.795  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-11-24 11:53:32.796  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-11-24 11:53:32.796  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-11-24 11:53:32.798  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-11-24 11:53:32.807  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-11-24 11:53:32.813  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-11-24 11:53:32.818  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-11-24 11:53:32.824  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5629510,type=ConfigurationPropertiesRebinder]
+2018-11-24 11:53:32.827  INFO 18400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-11-24 11:53:33.102  INFO 18400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2018-11-24 11:53:33.105  INFO 18400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: jolokia:type=Config is already registered. Adding it with jolokia:type=Config,uuid=21fa6c18-a5cb-48d9-a32b-ae23ecdbd2db, but you should revise your setup in order to either use a qualifier or ensure, that only a single agent gets registered (otherwise history functionality might not work)
+2018-11-24 11:53:33.105  INFO 18400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Cannot register (legacy) MBean handler for config store with name jmx4perl:type=Config since it already exists. This is the case if another agent has been already started within the same JVM. The registration is skipped.
+2018-11-24 11:53:33.106  INFO 18400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Jolokia Discovery MBean registration is skipped because there is already one registered.
+2018-11-24 11:53:33.154  INFO 18400 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-11-24 11:53:33.164  INFO 18400 --- [main] o.s.c.n.turbine.SpringAggregatorFactory  : Could not find monitors: []
+2018-11-24 11:53:33.225  INFO 18400 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StaticListener_For_Aggregator
+2018-11-24 11:53:33.226  INFO 18400 --- [main] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StaticListener_For_Aggregator
+2018-11-24 11:53:33.226  INFO 18400 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StaticListener_For_Aggregator]
+2018-11-24 11:53:33.226  INFO 18400 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2018-11-24 11:53:33.229  INFO 18400 --- [main] c.n.t.discovery.InstanceObservable       : Starting InstanceObservable at frequency: 60000 millis
+2018-11-24 11:53:33.229  INFO 18400 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:53:33.229  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:53:33.234  INFO 18400 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-11-24 11:53:33.257  INFO 18400 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-11-24 11:53:33.485  INFO 18400 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-11-24 11:53:33.485  INFO 18400 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-11-24 11:53:33.548  INFO 18400 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-11-24 11:53:33.549  INFO 18400 --- [Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-11-24 11:53:33.666  INFO 18400 --- [Timer-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-24 11:53:33.851  INFO 18400 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-11-24 11:53:33.852  INFO 18400 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-11-24 11:53:33.852  INFO 18400 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-11-24 11:53:33.852  INFO 18400 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-11-24 11:53:33.852  INFO 18400 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-11-24 11:53:33.852  INFO 18400 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-11-24 11:53:33.852  INFO 18400 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-11-24 11:53:33.968  INFO 18400 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-11-24 11:53:33.969  INFO 18400 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-11-24 11:53:33.971  INFO 18400 --- [Timer-0] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-11-24 11:53:33.972  INFO 18400 --- [Timer-0] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1543031613972 with initial instances count: 4
+2018-11-24 11:53:33.986  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:53:33.986  INFO 18400 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application service-turbine with eureka with status UP
+2018-11-24 11:53:33.987  INFO 18400 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1543031613987, current=UP, previous=STARTING]
+2018-11-24 11:53:33.988  INFO 18400 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-TURBINE/DESKTOP-T4PO715:service-turbine:8769: registering service...
+2018-11-24 11:53:33.996  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:53:33.997  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:53:33.997  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:53:33.997  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:53:33.997  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:53:34.000  INFO 18400 --- [Timer-0] c.n.t.monitor.instance.InstanceMonitor   : Url for host: http://DESKTOP-T4PO715:8762/hystrix.stream default
+2018-11-24 11:53:34.002  INFO 18400 --- [Timer-0] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: default_agg_aggClusterEventHandler
+2018-11-24 11:53:34.003  INFO 18400 --- [Timer-0] c.n.turbine.data.AggDataFromCluster      : Per handler dispacher started for: default_agg_aggClusterEventHandler
+2018-11-24 11:53:34.004  INFO 18400 --- [Timer-0] c.n.t.monitor.instance.InstanceMonitor   : Url for host: http://DESKTOP-T4PO715:8763/hystrix.stream default
+2018-11-24 11:53:34.036  INFO 18400 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-TURBINE/DESKTOP-T4PO715:service-turbine:8769 - registration status: 204
+2018-11-24 11:53:34.102  INFO 18400 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8769 (http)
+2018-11-24 11:53:34.103  INFO 18400 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8769
+2018-11-24 11:53:34.107  INFO 18400 --- [main] com.book.TurbineServiceApplication       : Started TurbineServiceApplication in 5.334 seconds (JVM running for 6.339)
+2018-11-24 11:54:04.183  INFO 18400 --- [http-nio-8769-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-24 11:54:04.184  INFO 18400 --- [http-nio-8769-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-24 11:54:04.228  INFO 18400 --- [http-nio-8769-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2018-11-24 11:54:17.058  INFO 18400 --- [http-nio-8769-exec-3] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1540093165] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-11-24 11:54:17.060  INFO 18400 --- [http-nio-8769-exec-3] c.n.t.s.servlet.TurbineStreamServlet     : FilterCriteria: []
+2018-11-24 11:54:17.060  INFO 18400 --- [http-nio-8769-exec-3] c.n.t.s.servlet.TurbineStreamServlet     : StatsType filters: []
+2018-11-24 11:54:17.063  INFO 18400 --- [http-nio-8769-exec-3] c.n.t.s.TurbineStreamingConnection       : Relevance config: []
+2018-11-24 11:54:17.064  INFO 18400 --- [http-nio-8769-exec-3] c.n.t.s.TurbineStreamingConnection       : Relevance metrics config: {}
+2018-11-24 11:54:17.064  INFO 18400 --- [http-nio-8769-exec-3] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StreamingHandler_7dbce3b8-6e73-4ef3-b016-9cf49fcbfe86
+2018-11-24 11:54:17.064  INFO 18400 --- [http-nio-8769-exec-3] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StreamingHandler_7dbce3b8-6e73-4ef3-b016-9cf49fcbfe86
+2018-11-24 11:54:17.064  INFO 18400 --- [http-nio-8769-exec-3] c.n.turbine.data.AggDataFromCluster      : Per handler dispacher started for: StreamingHandler_7dbce3b8-6e73-4ef3-b016-9cf49fcbfe86
+2018-11-24 11:54:17.064  INFO 18400 --- [http-nio-8769-exec-3] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StreamingHandler_7dbce3b8-6e73-4ef3-b016-9cf49fcbfe86, StaticListener_For_Aggregator]
+2018-11-24 11:54:17.064  INFO 18400 --- [http-nio-8769-exec-3] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2018-11-24 11:54:33.230  INFO 18400 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:54:33.230  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:54:33.230  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:54:33.231  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:54:33.231  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:54:33.231  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:54:33.231  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:54:33.231  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:54:47.934  INFO 18400 --- [http-nio-8769-exec-6] c.n.t.s.servlet.TurbineStreamServlet     : FilterCriteria: []
+2018-11-24 11:54:47.934  INFO 18400 --- [http-nio-8769-exec-6] c.n.t.s.servlet.TurbineStreamServlet     : StatsType filters: []
+2018-11-24 11:54:47.935  INFO 18400 --- [http-nio-8769-exec-6] c.n.t.s.TurbineStreamingConnection       : Relevance config: []
+2018-11-24 11:54:47.935  INFO 18400 --- [http-nio-8769-exec-6] c.n.t.s.TurbineStreamingConnection       : Relevance metrics config: {}
+2018-11-24 11:54:47.935  INFO 18400 --- [http-nio-8769-exec-6] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StreamingHandler_d8f037d0-5afa-4550-9fc4-372128a3b2f1
+2018-11-24 11:54:47.935  INFO 18400 --- [http-nio-8769-exec-6] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StreamingHandler_d8f037d0-5afa-4550-9fc4-372128a3b2f1
+2018-11-24 11:54:47.935  INFO 18400 --- [http-nio-8769-exec-6] c.n.turbine.data.AggDataFromCluster      : Per handler dispacher started for: StreamingHandler_d8f037d0-5afa-4550-9fc4-372128a3b2f1
+2018-11-24 11:54:47.935  INFO 18400 --- [http-nio-8769-exec-6] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StreamingHandler_7dbce3b8-6e73-4ef3-b016-9cf49fcbfe86, StaticListener_For_Aggregator, StreamingHandler_d8f037d0-5afa-4550-9fc4-372128a3b2f1]
+2018-11-24 11:54:47.936  INFO 18400 --- [http-nio-8769-exec-6] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2018-11-24 11:55:33.230  INFO 18400 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:55:33.230  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:55:33.231  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:55:33.231  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:55:33.231  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:55:33.232  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:55:33.232  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:55:33.232  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:55:56.974  INFO 18400 --- [http-nio-8769-exec-10] c.n.t.s.servlet.TurbineStreamServlet     : FilterCriteria: []
+2018-11-24 11:55:56.975  INFO 18400 --- [http-nio-8769-exec-10] c.n.t.s.servlet.TurbineStreamServlet     : StatsType filters: []
+2018-11-24 11:55:56.975  INFO 18400 --- [http-nio-8769-exec-10] c.n.t.s.TurbineStreamingConnection       : Relevance config: []
+2018-11-24 11:55:56.975  INFO 18400 --- [http-nio-8769-exec-10] c.n.t.s.TurbineStreamingConnection       : Relevance metrics config: {}
+2018-11-24 11:55:56.975  INFO 18400 --- [http-nio-8769-exec-10] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StreamingHandler_454759e6-5f79-438c-b15d-6d0f71255613
+2018-11-24 11:55:56.975  INFO 18400 --- [http-nio-8769-exec-10] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StreamingHandler_454759e6-5f79-438c-b15d-6d0f71255613
+2018-11-24 11:55:56.976  INFO 18400 --- [http-nio-8769-exec-10] c.n.turbine.data.AggDataFromCluster      : Per handler dispacher started for: StreamingHandler_454759e6-5f79-438c-b15d-6d0f71255613
+2018-11-24 11:55:56.976  INFO 18400 --- [http-nio-8769-exec-10] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StreamingHandler_7dbce3b8-6e73-4ef3-b016-9cf49fcbfe86, StaticListener_For_Aggregator, StreamingHandler_d8f037d0-5afa-4550-9fc4-372128a3b2f1, StreamingHandler_454759e6-5f79-438c-b15d-6d0f71255613]
+2018-11-24 11:55:56.976  INFO 18400 --- [http-nio-8769-exec-10] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2018-11-24 11:56:04.561  INFO 18400 --- [http-nio-8769-exec-2] c.n.t.s.servlet.TurbineStreamServlet     : FilterCriteria: []
+2018-11-24 11:56:04.561  INFO 18400 --- [http-nio-8769-exec-2] c.n.t.s.servlet.TurbineStreamServlet     : StatsType filters: []
+2018-11-24 11:56:04.562  INFO 18400 --- [http-nio-8769-exec-2] c.n.t.s.TurbineStreamingConnection       : Relevance config: []
+2018-11-24 11:56:04.562  INFO 18400 --- [http-nio-8769-exec-2] c.n.t.s.TurbineStreamingConnection       : Relevance metrics config: {}
+2018-11-24 11:56:04.562  INFO 18400 --- [http-nio-8769-exec-2] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StreamingHandler_75bb4737-51e2-429d-b1f7-db3cd1a9082a
+2018-11-24 11:56:04.562  INFO 18400 --- [http-nio-8769-exec-2] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StreamingHandler_75bb4737-51e2-429d-b1f7-db3cd1a9082a
+2018-11-24 11:56:04.562  INFO 18400 --- [http-nio-8769-exec-2] c.n.turbine.data.AggDataFromCluster      : Per handler dispacher started for: StreamingHandler_75bb4737-51e2-429d-b1f7-db3cd1a9082a
+2018-11-24 11:56:04.563  INFO 18400 --- [http-nio-8769-exec-2] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StreamingHandler_75bb4737-51e2-429d-b1f7-db3cd1a9082a, StreamingHandler_7dbce3b8-6e73-4ef3-b016-9cf49fcbfe86, StaticListener_For_Aggregator, StreamingHandler_d8f037d0-5afa-4550-9fc4-372128a3b2f1, StreamingHandler_454759e6-5f79-438c-b15d-6d0f71255613]
+2018-11-24 11:56:04.563  INFO 18400 --- [http-nio-8769-exec-2] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2018-11-24 11:56:11.086  INFO 18400 --- [http-nio-8769-exec-3] c.n.t.s.servlet.TurbineStreamServlet     : 
+
+
+
+RETURNING FROM waitOnConnection: StreamingHandler_7dbce3b8-6e73-4ef3-b016-9cf49fcbfe86
+2018-11-24 11:56:11.086  INFO 18400 --- [http-nio-8769-exec-3] c.n.t.handler.TurbineDataDispatcher      : Removing event handler: StreamingHandler_7dbce3b8-6e73-4ef3-b016-9cf49fcbfe86
+2018-11-24 11:56:11.088  INFO 18400 --- [pool-10-thread-1] com.netflix.turbine.utils.WorkerThread   : Worker got interrupted, shutting down
+2018-11-24 11:56:11.137  INFO 18400 --- [http-nio-8769-exec-3] c.n.turbine.data.AggDataFromCluster      : 
+
+Removing tuple for : StreamingHandler_7dbce3b8-6e73-4ef3-b016-9cf49fcbfe86 tuple running: false
+2018-11-24 11:56:11.137  INFO 18400 --- [http-nio-8769-exec-3] c.n.t.handler.TurbineDataDispatcher      :  tuples : [StreamingHandler_75bb4737-51e2-429d-b1f7-db3cd1a9082a, StaticListener_For_Aggregator, StreamingHandler_d8f037d0-5afa-4550-9fc4-372128a3b2f1, StreamingHandler_454759e6-5f79-438c-b15d-6d0f71255613]
+2018-11-24 11:56:11.138  INFO 18400 --- [http-nio-8769-exec-3] c.n.t.handler.TurbineDataDispatcher      : Removed handler queue tuple for handler: HandlerQueueTuple [eventHandler=com.netflix.turbine.streaming.TurbineStreamingConnection@78cc44e4]
+2018-11-24 11:56:14.966 ERROR 18400 --- [http-nio-8769-exec-6] c.n.t.s.TurbineStreamingConnection       : Got exception when writing to response stream
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:321) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:284) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.Response.flushBuffer(Response.java:541) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.ResponseFacade.flushBuffer(ResponseFacade.java:312) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at com.netflix.turbine.streaming.servlet.SynchronizedHttpServletResponse.flushBuffer(SynchronizedHttpServletResponse.java:79) ~[turbine-core-1.0.0.jar:na]
+	at com.netflix.turbine.streaming.servlet.TurbineStreamServlet$ServletStreamHandler.noData(TurbineStreamServlet.java:226) ~[turbine-core-1.0.0.jar:na]
+	at com.netflix.turbine.streaming.TurbineStreamingConnection.waitOnConnection(TurbineStreamingConnection.java:214) ~[turbine-core-1.0.0.jar:na]
+	at com.netflix.turbine.streaming.servlet.TurbineStreamServlet.streamFromCluster(TurbineStreamServlet.java:136) [turbine-core-1.0.0.jar:na]
+	at com.netflix.turbine.streaming.servlet.TurbineStreamServlet.doGet(TurbineStreamServlet.java:98) [turbine-core-1.0.0.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110) [spring-boot-actuator-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106) [spring-boot-actuator-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_73]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_73]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_73]
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.8.0_73]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.8.0_73]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.8.0_73]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.8.0_73]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471) ~[na:1.8.0_73]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1259) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:670) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:607) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:597) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.http11.Http11OutputBuffer.flushBuffer(Http11OutputBuffer.java:581) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:272) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1506) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:279) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.Response.action(Response.java:172) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:317) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	... 59 common frames omitted
+
+2018-11-24 11:56:17.975  INFO 18400 --- [http-nio-8769-exec-6] c.n.t.s.servlet.TurbineStreamServlet     : 
+
+
+
+RETURNING FROM waitOnConnection: StreamingHandler_d8f037d0-5afa-4550-9fc4-372128a3b2f1
+2018-11-24 11:56:17.975  INFO 18400 --- [http-nio-8769-exec-6] c.n.t.handler.TurbineDataDispatcher      : Removing event handler: StreamingHandler_d8f037d0-5afa-4550-9fc4-372128a3b2f1
+2018-11-24 11:56:17.975  INFO 18400 --- [pool-11-thread-1] com.netflix.turbine.utils.WorkerThread   : Worker got interrupted, shutting down
+2018-11-24 11:56:18.026  INFO 18400 --- [http-nio-8769-exec-6] c.n.turbine.data.AggDataFromCluster      : 
+
+Removing tuple for : StreamingHandler_d8f037d0-5afa-4550-9fc4-372128a3b2f1 tuple running: false
+2018-11-24 11:56:18.026  INFO 18400 --- [http-nio-8769-exec-6] c.n.t.handler.TurbineDataDispatcher      :  tuples : [StreamingHandler_75bb4737-51e2-429d-b1f7-db3cd1a9082a, StaticListener_For_Aggregator, StreamingHandler_454759e6-5f79-438c-b15d-6d0f71255613]
+2018-11-24 11:56:18.027  INFO 18400 --- [http-nio-8769-exec-6] c.n.t.handler.TurbineDataDispatcher      : Removed handler queue tuple for handler: HandlerQueueTuple [eventHandler=com.netflix.turbine.streaming.TurbineStreamingConnection@65eae46e]
+2018-11-24 11:56:19.764  INFO 18400 --- [http-nio-8769-exec-4] c.n.t.s.servlet.TurbineStreamServlet     : FilterCriteria: []
+2018-11-24 11:56:19.764  INFO 18400 --- [http-nio-8769-exec-4] c.n.t.s.servlet.TurbineStreamServlet     : StatsType filters: []
+2018-11-24 11:56:19.764  INFO 18400 --- [http-nio-8769-exec-4] c.n.t.s.TurbineStreamingConnection       : Relevance config: []
+2018-11-24 11:56:19.764  INFO 18400 --- [http-nio-8769-exec-4] c.n.t.s.TurbineStreamingConnection       : Relevance metrics config: {}
+2018-11-24 11:56:19.764  INFO 18400 --- [http-nio-8769-exec-4] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StreamingHandler_9e69ea62-dbe4-49d2-a404-752e8031e349
+2018-11-24 11:56:19.764  INFO 18400 --- [http-nio-8769-exec-4] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StreamingHandler_9e69ea62-dbe4-49d2-a404-752e8031e349
+2018-11-24 11:56:19.764  INFO 18400 --- [http-nio-8769-exec-4] c.n.turbine.data.AggDataFromCluster      : Per handler dispacher started for: StreamingHandler_9e69ea62-dbe4-49d2-a404-752e8031e349
+2018-11-24 11:56:19.765  INFO 18400 --- [http-nio-8769-exec-4] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StreamingHandler_75bb4737-51e2-429d-b1f7-db3cd1a9082a, StaticListener_For_Aggregator, StreamingHandler_454759e6-5f79-438c-b15d-6d0f71255613, StreamingHandler_9e69ea62-dbe4-49d2-a404-752e8031e349]
+2018-11-24 11:56:19.765  INFO 18400 --- [http-nio-8769-exec-4] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2018-11-24 11:56:33.231  INFO 18400 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:56:33.231  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:56:33.232  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:56:33.232  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:56:33.232  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:56:33.232  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:56:33.233  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:56:33.233  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:57:05.993 ERROR 18400 --- [http-nio-8769-exec-10] c.n.t.s.TurbineStreamingConnection       : Got exception when writing to response stream
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:321) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:284) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.Response.flushBuffer(Response.java:541) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.ResponseFacade.flushBuffer(ResponseFacade.java:312) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at com.netflix.turbine.streaming.servlet.SynchronizedHttpServletResponse.flushBuffer(SynchronizedHttpServletResponse.java:79) ~[turbine-core-1.0.0.jar:na]
+	at com.netflix.turbine.streaming.servlet.TurbineStreamServlet$ServletStreamHandler.noData(TurbineStreamServlet.java:226) ~[turbine-core-1.0.0.jar:na]
+	at com.netflix.turbine.streaming.TurbineStreamingConnection.waitOnConnection(TurbineStreamingConnection.java:214) ~[turbine-core-1.0.0.jar:na]
+	at com.netflix.turbine.streaming.servlet.TurbineStreamServlet.streamFromCluster(TurbineStreamServlet.java:136) [turbine-core-1.0.0.jar:na]
+	at com.netflix.turbine.streaming.servlet.TurbineStreamServlet.doGet(TurbineStreamServlet.java:98) [turbine-core-1.0.0.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110) [spring-boot-actuator-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106) [spring-boot-actuator-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_73]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_73]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_73]
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.8.0_73]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.8.0_73]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.8.0_73]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.8.0_73]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471) ~[na:1.8.0_73]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1259) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:670) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:607) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:597) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.http11.Http11OutputBuffer.flushBuffer(Http11OutputBuffer.java:581) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:272) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1506) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:279) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.Response.action(Response.java:172) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:317) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	... 59 common frames omitted
+
+2018-11-24 11:57:09.002  INFO 18400 --- [http-nio-8769-exec-10] c.n.t.s.servlet.TurbineStreamServlet     : 
+
+
+
+RETURNING FROM waitOnConnection: StreamingHandler_454759e6-5f79-438c-b15d-6d0f71255613
+2018-11-24 11:57:09.002  INFO 18400 --- [http-nio-8769-exec-10] c.n.t.handler.TurbineDataDispatcher      : Removing event handler: StreamingHandler_454759e6-5f79-438c-b15d-6d0f71255613
+2018-11-24 11:57:09.002  INFO 18400 --- [pool-12-thread-1] com.netflix.turbine.utils.WorkerThread   : Worker got interrupted, shutting down
+2018-11-24 11:57:09.053  INFO 18400 --- [http-nio-8769-exec-10] c.n.turbine.data.AggDataFromCluster      : 
+
+Removing tuple for : StreamingHandler_454759e6-5f79-438c-b15d-6d0f71255613 tuple running: false
+2018-11-24 11:57:09.053  INFO 18400 --- [http-nio-8769-exec-10] c.n.t.handler.TurbineDataDispatcher      :  tuples : [StreamingHandler_75bb4737-51e2-429d-b1f7-db3cd1a9082a, StaticListener_For_Aggregator, StreamingHandler_9e69ea62-dbe4-49d2-a404-752e8031e349]
+2018-11-24 11:57:09.053  INFO 18400 --- [http-nio-8769-exec-10] c.n.t.handler.TurbineDataDispatcher      : Removed handler queue tuple for handler: HandlerQueueTuple [eventHandler=com.netflix.turbine.streaming.TurbineStreamingConnection@55ee510d]
+2018-11-24 11:57:18.768  INFO 18400 --- [http-nio-8769-exec-9] c.n.t.s.servlet.TurbineStreamServlet     : FilterCriteria: []
+2018-11-24 11:57:18.768  INFO 18400 --- [http-nio-8769-exec-9] c.n.t.s.servlet.TurbineStreamServlet     : StatsType filters: []
+2018-11-24 11:57:18.768  INFO 18400 --- [http-nio-8769-exec-9] c.n.t.s.TurbineStreamingConnection       : Relevance config: []
+2018-11-24 11:57:18.768  INFO 18400 --- [http-nio-8769-exec-9] c.n.t.s.TurbineStreamingConnection       : Relevance metrics config: {}
+2018-11-24 11:57:18.768  INFO 18400 --- [http-nio-8769-exec-9] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StreamingHandler_4ce00d69-98d8-4d6f-a81f-ff759ec4724d
+2018-11-24 11:57:18.768  INFO 18400 --- [http-nio-8769-exec-9] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StreamingHandler_4ce00d69-98d8-4d6f-a81f-ff759ec4724d
+2018-11-24 11:57:18.768  INFO 18400 --- [http-nio-8769-exec-9] c.n.turbine.data.AggDataFromCluster      : Per handler dispacher started for: StreamingHandler_4ce00d69-98d8-4d6f-a81f-ff759ec4724d
+2018-11-24 11:57:18.768  INFO 18400 --- [http-nio-8769-exec-9] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StreamingHandler_75bb4737-51e2-429d-b1f7-db3cd1a9082a, StreamingHandler_4ce00d69-98d8-4d6f-a81f-ff759ec4724d, StaticListener_For_Aggregator, StreamingHandler_9e69ea62-dbe4-49d2-a404-752e8031e349]
+2018-11-24 11:57:18.768  INFO 18400 --- [http-nio-8769-exec-9] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2018-11-24 11:57:33.231  INFO 18400 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [eureka-client-one, eureka-client-two]
+2018-11-24 11:57:33.231  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-one
+2018-11-24 11:57:33.231  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-one, size=1
+2018-11-24 11:57:33.232  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: eureka-client-two
+2018-11-24 11:57:33.232  INFO 18400 --- [Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: eureka-client-two, size=1
+2018-11-24 11:57:33.232  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 2
+2018-11-24 11:57:33.232  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2018-11-24 11:57:33.232  INFO 18400 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:2, hosts down: 0
+2018-11-24 11:57:35.436  INFO 18400 --- [InstanceMonitor] c.n.t.monitor.instance.InstanceMonitor   : Got ioe for host: DESKTOP-T4PO715:8762
+2018-11-24 11:57:35.436  INFO 18400 --- [InstanceMonitor] c.n.t.monitor.instance.InstanceMonitor   : Re-initing host connection: DESKTOP-T4PO715:8762 default
